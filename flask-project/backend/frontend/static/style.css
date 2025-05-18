@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Background utama */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-size: cover;
+    color:  #bb5d5d;
+    text-transform: uppercase;
+    min-height: 100vh;
+}
+
+
+/* Container Utama */
+.container {
+    max-width: 100%;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 4px solid #ffcc00;
+}
+
+/* Tabel Produk */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #222;
+    color: white;
+    border: 4px solid #ffcc00;
+}
+
+th {
+    background: #ff5500;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    border: 3px solid #ffcc00;
+}
+
+td {
+    padding: 12px;
+    border: 2px solid #ffcc00;
+}
+
+tr:nth-child(even) {
+    background: #333;
+}
+
+tr:hover {
+    background: #ff5500;
+    color: black;
+    transition: 0.3s;
+}
+
+/* Header */
+.header-container {
+    padding: 15px 20px;
+    background: #ff5500;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    border: 4px solid #ffcc00;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Tombol */
+.btn-update {
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border: 3px solid #ff5500;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: 0.2s ease-in-out;
+    font-size: 12px;
+}
+
+.btn-update:hover {
+    transform: scale(1.1);
+    background: #ff5500;
+    color: white;
+    border: 3px solid #ffcc00;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tombol Delete */
+.btn-delete {
+    background: #dc3545;
+    color: white;
+    font-weight: bold;
+    border: 3px solid #ffcc00;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: 0.2s ease-in-out;
+    font-size: 12px;
+}
+
+.btn-delete:hover {
+    transform: scale(1.1);
+    background: #ff5500;
+    color: black;
+    border: 3px solid #ffcc00;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Efek Klik */
+.btn-update:active, .btn-delete:active {
+    transform: scale(0.95);
+}
+
+/* Efek Glitch untuk Tombol */
+@keyframes glitch {
+    0% { transform: skew(2deg); }
+    25% { transform: skew(-2deg); }
+    50% { transform: skew(2deg); }
+    75% { transform: skew(-2deg); }
+    100% { transform: skew(0); }
+}
+
+.btn-update:hover, .btn-delete:hover {
+    animation: glitch 0.2s infinite;
+}
